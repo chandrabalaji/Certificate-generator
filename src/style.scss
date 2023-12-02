@@ -1,0 +1,222 @@
+* {
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+
+.form {
+  padding: 10px 20px;
+  background-color: antiquewhite;
+  width: 350px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    max-width: 300px;
+  }
+  .gender {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+  }
+  select {
+    padding: 10px;
+    max-width: 250px;
+
+    option {
+      font-size: 20px;
+    }
+  }
+  .btn-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn {
+      padding: 10px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      background-color: rgba(18, 6, 150, 0.811);
+      width: max-content;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.certificate {
+  // width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .download {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: max-content;
+    font-size: 2em;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    z-index: 0;
+    backdrop-filter: blur(0px) saturate(200%);
+    -webkit-backdrop-filter: blur(0px) saturate(200%);
+    background-color: rgba(29, 28, 28, 0.422);
+    padding: 5px;
+    padding-right: 10px;
+    button {
+      font-size: 2rem;
+      text-decoration: none;
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    width: 900px;
+    height: 670px;
+    border: 2px solid;
+    background-color: #423e37;
+    position: relative;
+    z-index: 2;
+ 
+    #img {
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      right: 0px;
+      left: 0px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .logo {
+      position: relative;
+      top: 94px;
+      left: 10px;
+      color: rgba(18, 6, 150, 0.811);
+      box-shadow: 5px 0px 5px 0.5px;
+      max-width: max-content;
+      padding: 10px;
+    }
+    #madel {
+      width: 250px;
+      height: 220px;
+      position: absolute;
+      right: 50px;
+      top: 50px;
+    }
+    .usercontent {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 130px;
+      width: 100%;
+      box-sizing: border-box;
+      h2 {
+        color: white;
+        text-transform: uppercase;
+      }
+      .discerption {
+        width: 100%;
+
+        p {
+          color: rgba(238, 238, 240, 0.975);
+          font-size: 1.3em;
+          padding: 0 15px;
+          line-height: 30px;
+          width: 100%;
+          font-family: "Source Serif 4", serif;
+          word-spacing: 2px;
+          line-break: strict;
+
+          span {
+            position: relative;
+            border-bottom: 2px solid white;
+            width: 700px;
+            font-weight: 590;
+            padding: 0 60px;
+            font-size: 1.25em;
+            color: rgba(253, 253, 254, 0.984);
+          }
+          #cc {
+            display: block;
+            border: none;
+            position: relative;
+            left: 200px;
+          }
+        }
+        h3 {
+          align-self: flex-start;
+          color: #fff;
+          padding: 0 20px;
+        }
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .issuer {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 100%;
+          #QR {
+            width: 90px;
+            height: 90px;
+          }
+          #iso {
+            color: white;
+            width: 150px;
+            height: 120px;
+          }
+          .signdiv {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            color: #fff;
+            #sign {
+              width: 140px;
+              height: 70px;
+              position: relative;
+              border-bottom: 2px solid white;
+            }
+          }
+        }
+        .media {
+          display: flex;
+          width: 100%;
+          color: rgba(198, 198, 202, 0.911);
+          align-items: center;
+          justify-content: space-around;
+          padding: 0 10px;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

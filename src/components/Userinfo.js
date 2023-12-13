@@ -36,7 +36,7 @@ const Userinfo = () => {
     <div className="container">
       <h1>Certificate Generator</h1>
       <form className="form" onSubmit={handlesubmit}>
-        <label htmlFor=""> name :</label>
+        <label htmlFor=""> name:</label>
         <input
           type="text"
           value={name}
@@ -54,7 +54,7 @@ const Userinfo = () => {
           required
         />
 
-        <label htmlFor="">Courses </label>
+        <label htmlFor="">Courses:</label>
         <select
           name=""
           id=""
@@ -71,31 +71,32 @@ const Userinfo = () => {
           <option value="Full-Stack Development">Full-Stack Development</option>
           <option value="ASP.Net Development">ASP.Net Development</option>
         </select>
+        <label htmlFor="">Issued By:   </label>
         <input
           type="text"
           value={issuer}
           onChange={(e) => setissuer(e.target.value)}
           required
         />
-        <label>Gender</label>
+        <label>Gender:  ('optional')</label>
         <div className="gender">
           <input
             name="gender"
             type="radio"
-            id=""
+            id="m"
             value="male"
             onClick={handlegenderselect}
           />
-          <label htmlFor="">male</label>
+          <label htmlFor="m">male</label>
           <input
             name="gender"
             type="radio"
-            id=""
+            id="f"
             value="female"
             onClick={handlegenderselect}
           />
 
-          <label htmlFor="">Female</label>
+          <label htmlFor="f">Female</label>
         </div>
         <div className="btn-div">
           <button type="submit" className="btn">

@@ -8,24 +8,41 @@
   flex-direction: column;
   width: 100vw;
   align-items: center;
+  h1 {
+    font-family: "Source Serif 4", serif;
+
+    color: rgba(255, 255, 255, 0.897);
+  }
 }
 
 .form {
-  padding: 10px 20px;
-  background-color: antiquewhite;
-  width: 350px;
+  padding: 20px 20px 0 20px;
+  background-color: #ddf0ff;
+  width: 390px;
   height: 600px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-left: 20px;
+  padding-left: 30px;
   border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Serif 4", serif;
   input {
+    font-size: 1.1em;
+    font-weight: 400;
     padding: 10px;
     border: none;
     outline: none;
+    font-family: "Source Serif 4", serif;
+
     border-radius: 10px;
     max-width: 300px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  label {
+    font-size: 1.1em;
   }
   .gender {
     display: flex;
@@ -33,24 +50,61 @@
     padding: 10px;
   }
   select {
-    padding: 10px;
+    padding: 10px 15px;
     max-width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: "Source Serif 4", serif;
 
+    &:hover {
+      background-color: #3f88c5;
+      color: white;
+    }
     option {
       font-size: 20px;
     }
   }
+
+  .gender {
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[type="radio"] + label::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      padding: 5px;
+      margin-right: 10px;
+      background-clip: content-box;
+      border: 2px solid #93c6d6;
+      border-radius: 50%;
+      position: relative;
+      top: 5px;
+      cursor: pointer;
+    }
+
+    input[type="radio"]:checked + label::before {
+      border: 2px solid #3f88c5;
+      background-color: #3f88c5;
+    }
+  }
+
   .btn-div {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     .btn {
+      font-family: "Source Serif 4", serif;
+
       padding: 10px;
       border-radius: 5px;
       outline: none;
       border: none;
-      background-color: rgba(18, 6, 150, 0.811);
+      background-color: #145c9e;
       width: max-content;
       color: white;
       font-size: 1.1rem;
@@ -58,6 +112,16 @@
     }
   }
 }
+
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 
 .certificate {
   // width: 100vw;
@@ -78,7 +142,7 @@
     z-index: 0;
     backdrop-filter: blur(0px) saturate(200%);
     -webkit-backdrop-filter: blur(0px) saturate(200%);
-    background-color: rgba(29, 28, 28, 0.422);
+    background-color: rgba(255, 255, 255, 0.151);
     padding: 5px;
     padding-right: 10px;
     button {
@@ -93,12 +157,11 @@
 
   .content {
     width: 900px;
-    height: 670px;
-    border: 2px solid;
+    height: 700px;
     background-color: #423e37;
     position: relative;
     z-index: 2;
- 
+
     #img {
       position: absolute;
       top: 0;
@@ -220,3 +283,6 @@
     }
   }
 }
+
+
+
